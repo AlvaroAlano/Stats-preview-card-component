@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container {
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  width: 1000px;
+  border-radius: 10px;
+}
+.area-desc {
+  width: 600px;
+  padding: 60px 100px 0 60px;
+}
+.area-desc h1{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.area-desc span {
+  color: var(--soft-violet);
+}
+.area-desc p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-top: 30px;
+}
+.area-bottom {
+  display: flex;
+  font-family: 'Inter';
+  margin-top: 60px;
+  gap: 80px;
+}
+.area-bottom h4 {
+  font-size: 22px;
+}
+.area-bottom p {
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 400;
+}
+.area-image {
+  background: url('./images/image-header-desktop.jpg') no-repeat center/cover;
+  width: 400px;
+}
+.area-image .overlay {
+  background-color: hsla(277, 64%, 61%, 0.5);
+  height: 400px;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+  }
+  .area-img {
+  }
+
+}
